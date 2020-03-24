@@ -4,13 +4,12 @@
       <li class="collection-header">
         <h4>Social Distancing Can Be Fun 🧠</h4>
         <h6>
-          A creativly curated list of things to do while in
+          A creatively curated list of things to do while in
           <s>self-isolation</s> quarantine.
         </h6>
       </li>
       <li v-for="idea in ideas" v-bind:key="idea.id" class="collection-item">
         <div class="chip">{{ idea.idea_id }} from {{ idea.location }}</div>
-
         {{ idea.idea_name }}:
         {{ idea.idea_desc }}
         <router-link
